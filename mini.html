@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini calculater</title>
+</head>
+<body>
+
+    <input type="text"placeholder="enter the first number"id="firstNumber">
+    <input type="text"placeholder="enter the second number"id="secondNumber">
+    <p id="result">
+        the output
+    </p>
+
+
+    <button onclick = "mul()">
+        *
+    </button>
+    <button onclick="div()">
+        /
+    </button>
+    <script>
+        var firstnumber = document.getElementById("firstNumber");
+        var secondnumber = document.getElementById("secondNumber");
+        var result = document.getElementById("result");
+
+        function mul() {
+            var output = Number(firstNumber.value)*Number(secondNumber.value);
+            result.innerHTML="the output is"  + output;
+        }
+        function div() {
+            var output = Number(firstNumber.value)/Number(secondNumber.value);
+            result.innerHTML="the output is" + output;
+        }
+        
+    </script>
+</body>
+</html>
